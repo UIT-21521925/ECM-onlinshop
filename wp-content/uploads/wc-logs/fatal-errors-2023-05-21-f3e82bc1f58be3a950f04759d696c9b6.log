@@ -1,0 +1,77 @@
+2023-05-21T07:15:45+00:00 CRITICAL Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\ecm\wp-admin\includes\class-wp-upgrader.php:539
+Stack trace:
+#0 C:\xampp\htdocs\ecm\wp-admin\includes\class-wp-upgrader.php(539): array_keys(false)
+#1 C:\xampp\htdocs\ecm\wp-admin\includes\class-wp-upgrader.php(808): WP_Upgrader->install_package(Array)
+#2 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3266): WP_Upgrader->run(Array)
+#3 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3371): TGMPA_Bulk_Installer->run(Array)
+#4 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(2985): TGMPA_Bulk_Installer->bulk_install(Array)
+#5 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(751): TGMPA_List_Table->process_bulk_actions()
+#6 C:\xampp\htdocs\ecm\wp-includes\class-wp-hook.php(308): TGM_Plugin_Activation->install_plugins_page('')
+#7 C:\xampp\htdocs\ecm\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\ecm\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\ecm\wp-admin\admin.php(259): do_action('plugins_page_tg...')
+#10 C:\xampp\htdocs\ecm\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\ecm\wp-admin\includes\class-wp-upgrader.php on line 539
+
+2023-05-21T07:15:45+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in C:\xampp\htdocs\ecm\wp-admin\includes\class-bulk-upgrader-skin.php:156
+Stack trace:
+#0 C:\xampp\htdocs\ecm\wp-admin\includes\class-bulk-upgrader-skin.php(156): sprintf('%1$s installed ...', 'Elementor')
+#1 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3646): Bulk_Upgrader_Skin->after('Elementor')
+#2 C:\xampp\htdocs\ecm\wp-admin\includes\class-wp-upgrader.php(841): TGMPA_Bulk_Installer_Skin->after()
+#3 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3266): WP_Upgrader->run(Array)
+#4 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3371): TGMPA_Bulk_Installer->run(Array)
+#5 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(2985): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(751): TGMPA_List_Table->process_bulk_actions()
+#7 C:\xampp\htdocs\ecm\wp-includes\class-wp-hook.php(308): TGM_Plugin_Activation->install_plugins_page('')
+#8 C:\xampp\htdocs\ecm\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#9 C:\xampp\htdocs\ecm\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\ecm\wp-admin\admin.php(259): do_action('plugins_page_tg...')
+#11 C:\xampp\htdocs\ecm\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\ecm\wp-admin\includes\class-bulk-upgrader-skin.php on line 156
+
+2023-05-21T07:16:45+00:00 CRITICAL Uncaught Error: Class "Elementor\Core\Base\Module" not found in C:\xampp\htdocs\ecm\wp-content\plugins\elementor\core\logger\manager.php:17
+Stack trace:
+#0 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\autoloader.php(294): require()
+#1 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\autoloader.php(330): Elementor\Autoloader::load_class('Core\\Logger\\Man...')
+#2 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\plugin.php(875): Elementor\Autoloader::autoload('Elementor\\Core\\...')
+#3 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\plugin.php(620): Elementor\Plugin->__construct()
+#4 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\plugin.php(892): Elementor\Plugin::instance()
+#5 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\elementor.php(53): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\ecm\wp-admin\includes\plugin.php(2314): include_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\ecm\wp-admin\includes\plugin.php(661): plugin_sandbox_scrape('elementor/eleme...')
+#8 C:\xampp\htdocs\ecm\wp-admin\includes\plugin.php(867): activate_plugin('elementor/eleme...', '', false, false)
+#9 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3033): activate_plugins(Array)
+#10 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3081): TGMPA_List_Table->process_bulk_actions()
+#11 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(761): TGMPA_List_Table->prepare_items()
+#12 C:\xampp\htdocs\ecm\wp-includes\class-wp-hook.php(308): TGM_Plugin_Activation->install_plugins_page('')
+#13 C:\xampp\htdocs\ecm\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#14 C:\xampp\htdocs\ecm\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 C:\xampp\htdocs\ecm\wp-admin\admin.php(259): do_action('plugins_page_tg...')
+#16 C:\xampp\htdocs\ecm\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#17 {main}
+  thrown in C:\xampp\htdocs\ecm\wp-content\plugins\elementor\core\logger\manager.php on line 17
+
+2023-05-21T07:16:45+00:00 CRITICAL Uncaught Error: Class "Elementor\Core\Base\Module" not found in C:\xampp\htdocs\ecm\wp-content\plugins\elementor\core\logger\manager.php:17
+Stack trace:
+#0 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\autoloader.php(294): require()
+#1 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\autoloader.php(330): Elementor\Autoloader::load_class('Core\\Logger\\Man...')
+#2 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\plugin.php(875): Elementor\Autoloader::autoload('Elementor\\Core\\...')
+#3 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\plugin.php(620): Elementor\Plugin->__construct()
+#4 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\includes\plugin.php(892): Elementor\Plugin::instance()
+#5 C:\xampp\htdocs\ecm\wp-content\plugins\elementor\elementor.php(53): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\ecm\wp-admin\includes\plugin.php(2314): include_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\ecm\wp-admin\includes\plugin.php(661): plugin_sandbox_scrape('elementor/eleme...')
+#8 C:\xampp\htdocs\ecm\wp-admin\includes\plugin.php(867): activate_plugin('elementor/eleme...', '', false, false)
+#9 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3033): activate_plugins(Array)
+#10 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(3081): TGMPA_List_Table->process_bulk_actions()
+#11 C:\xampp\htdocs\ecm\wp-content\plugins\woostify-sites-library\includes\class-tgm-plugin-activation.php(761): TGMPA_List_Table->prepare_items()
+#12 C:\xampp\htdocs\ecm\wp-includes\class-wp-hook.php(308): TGM_Plugin_Activation->install_plugins_page('')
+#13 C:\xampp\htdocs\ecm\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#14 C:\xampp\htdocs\ecm\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 C:\xampp\htdocs\ecm\wp-admin\admin.php(259): do_action('plugins_page_tg...')
+#16 C:\xampp\htdocs\ecm\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#17 {main}
+  thrown in C:\xampp\htdocs\ecm\wp-content\plugins\elementor\core\logger\manager.php on line 17
+
